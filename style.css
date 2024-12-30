@@ -1,0 +1,280 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+.spline-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(0, 0, 0);
+    color: #e9ecef;
+    background-image: url("./images/background2.jpg");
+    background-size: cover;
+}
+
+header {
+    background: rgba(0, 0, 0, 0);
+    color: #edede9;
+    padding: 20px;
+    text-align: center;
+    z-index: 6;
+    position: relative;
+}
+
+.border {
+    height: 1.2px;
+    background-color: #edede967;
+    margin-top: 10px;
+    width: 90%;
+    justify-self: center;
+}
+
+.github {
+    height: 25px;
+    width: 25px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    transition: 0.3s;
+}
+
+nav ul li a {
+    color: #edede9;
+    text-decoration: none;
+    text-shadow: black 0.5px 1.1px 2.1px;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    
+}
+
+main {
+    padding: 0px;
+    max-width: 600px;
+    margin-left: 7rem;
+    margin-right: auto;
+}
+
+#hero {
+    background: rgba(255, 255, 255, 0.07);
+    color: #edede9;
+    padding: 30px;
+    text-align: center;
+    text-shadow: black 0.5px 1.1px 2.1px;
+    border-radius: 30px;
+    
+}
+
+#features {
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.07);
+    text-align: left;
+    padding: 20px;
+}
+
+#drop-area {
+    border: 2px dashed #e3d5ca;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#drop-area.highlight {
+    border-color: #e9ecef;
+}
+
+.btn {
+    display: inline-block;
+    background: #dee2e6;
+    color: #edede9;
+    text-shadow: black 0.5px 1.1px 2.1px;
+    padding: 0px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #f8f9fa;
+}
+
+#magnet-link {
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #edede9;
+    border-color: #edede9;
+    border-radius: 20px;
+    height: 40px;
+    width: 440px;
+    text-align: center;
+}
+
+#start-download {
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+    border-color: #edede9;
+    border-width: 3px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #edede9;
+}
+
+#usage {
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.07);
+    position: relative;
+}
+
+.box {
+    background-color: black;
+    height: 100px;
+    width: 350px;
+    position:fixed;
+    top: 90%;
+    left: 80%;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-shadow: black 0.5px 1.1px 2.1px;
+    color: #edede9;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#progress-container {
+    margin: 20px auto;
+    width: 99%;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    border-color: #e0e0e0;
+    border-width: 5px;
+}
+
+#progress-bar {
+    height: 20px;
+    width: 0%;
+    background-color: #565c57;
+    border-radius: 20px;
+    transition: width 0.2s; 
+    border-color: #e0e0e0;
+}
+
+footer {
+    text-align: center;
+    padding: 0px;
+    background: rgba(255, 255, 255, 0);
+    color: #edede9;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: #edede9;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: #edede9;
+}
+
+#spline-viewer {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 768px) {
+body {
+    overflow: scroll;
+}
+
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #magnet-link {
+        width: 100%;
+    }
+
+    #start-download {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        left: 0;
+        top: 80%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+body {
+    overflow: scroll;
+}
+
+    header {
+        padding: 15px;
+    }
+
+    #hero {
+        padding: 20px;
+    }
+
+    #features {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
